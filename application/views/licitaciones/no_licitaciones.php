@@ -1,0 +1,1 @@
+<p class="info" id="error"><span class="info_inner">No hay licitaciones registradas</span></p>

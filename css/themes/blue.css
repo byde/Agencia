@@ -1,0 +1,27 @@
+/* 
+Admin Gem Template
+Author: MaestroX (http://themeforest.net/user/MaestroX)
+*/
+
+a:focus, a:hover {
+	color:#008bbf;
+}
+a {
+	color:#008bbf;
+	text-decoration:underline;
+}
+.box a {
+	color:#1f92ff;
+	text-decoration:none;
+}
+.box a:hover {
+	color:#1f92ff;
+	text-decoration:underline;
+}
+
+.pagination .active {
+	background-color:#398BD1;
+}
+.pagination li:hover {
+	border:solid 1px #398BD1;
+}
