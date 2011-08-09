@@ -8,8 +8,9 @@ class Licitaciones extends CI_Controller
         if(!$data['licitaciones'])
             $this->load->view("licitaciones/no_licitaciones");
         else
-            $this->load->view("last_licitaciones");
-			
+
+            $this->load->view("licitaciones/last_licitaciones", $data);
+
     }
 	public function cargar_formulario_nueva_licitacion()
 	{	$this->load->view("formulario_nueva_licitacion");
