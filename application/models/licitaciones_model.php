@@ -17,9 +17,11 @@ class Licitaciones_model extends CI_Model {
                 return $q->result_array();
         return false;
     }
-	function guardar($data)
+	function guardar()
 	{
-		$this->db->insert('licitaciones',$data);
+		$this->db->set("creacion", "NOW()", false);
+		$this->db->set($this->input->post());
+		$this->db->insert('licitaciones');
 		return;
 	}
 	function ver_conincidencias($data)
