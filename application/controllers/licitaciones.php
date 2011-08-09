@@ -20,16 +20,8 @@ class Licitaciones extends CI_Controller
 	{
 		// Nombre descriptivo, cantidad
 		//de articulos, producto, fecha a finalizar.
-		$data = array(
-			"idUsuario" =>1,
-			"creacion" =>$this->input->post('creacion'),
-			"fin" =>$this->input->post('fin'),
-			"descriptivo" =>$this->input->post('descriptivo'),
-			/*"cantidad" =>$this->input->post('cantidad'),*/
-			"producto" =>$this->input->post('producto')
-		);
 		$this->load->model("licitaciones_model");
-		$this->licitaciones_model->guardar($data);
+		$this->licitaciones_model->guardar();
 		$this->index();
 		
 	}
