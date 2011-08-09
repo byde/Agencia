@@ -1,5 +1,5 @@
 $(function(){
-    $(".menutop").click(function(e){
+    $(".menutop").live('click', function(e){
         e.preventDefault();
         //alert($(this).attr("href"));
         $("#content").load($(this).attr("href"));
