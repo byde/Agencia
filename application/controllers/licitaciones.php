@@ -21,21 +21,33 @@ class Licitaciones extends CI_Controller
 		// Nombre descriptivo, cantidad
 		//de articulos, producto, fecha a finalizar.
 		$this->load->model("licitaciones_model");
-		$this->licitaciones_model->guardar();
-		$this->index();
+		echo $this->licitaciones_model->guardar();
+		//$this->index();
+                
 		
 	}
-	public function cargar_formulario_ver_licitacion()
-	{	$this->load->view("formulario_ver_licitacion");
-		
-	}
-	public function ver()
+	public function nuevacampos($idlicitacion)
 	{
-		$data = array(
-			"descriptivo" =>$this->input->post('descriptivo')
-		);
+		// Nombre descriptivo, cantidad
+		//de articulos, producto, fecha a finalizar.
 		$this->load->model("licitaciones_model");
-		$this->licitaciones_model->ver_coincidencias($data);
-		$this->index();
+                echo "entra " .$this->input->post("campos");
+;
+                for($n = 1; $n <= $this->input->post("campos"); $n++){
+                    $this->licitaciones_model->guardarcampo($idlicitacion, $this->input->post("campovalor".$n),$this->input->post("camponombre".$n));
+                //echo $idlicitacion . $this->input->post("campovalor".$n) . $this->input->post("camponombre".$n) . "<br />";
+                }
+		//$this->index();
+                
+		
+	}
+	public function ver($idlicitacion)
+	{
+		$this->load->model("licitaciones_model");
+		$data["licitacion"] = $this->licitaciones_model->get_licitacion($idlicitacion);
+		$data["campos"] = $this->licitaciones_model->get_campos($idlicitacion);
+                
+                $this->load->view("licitaciones/ver", $data);
+		
 	}
 }

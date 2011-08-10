@@ -1,16 +1,12 @@
- <html>
-	 <head>
+
 	 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/estilo_opciones_licitacion.css" />
 		<script type="text/javascript" src="<?php echo base_url(); ?>js/licitaciones.js"></script>
-	</head>
-	<body>	
 		<div style="display: none;" class="demo-description">
 		
 		</div><!-- End demo-description -->
 		
 		<h3>Crear nueva licitacion</h3>
-		<?php echo form_open('licitaciones/nueva'); ?>
-		<fieldset>
+                <form id="formNueva" action="<?php echo base_url(); ?>index.php/licitaciones/nueva" >
 		<p>
 			<label for="descriptivo">Nombre descriptivo:</label>
 			<input type="text" name="descriptivo" id="descriptivo" />
@@ -41,9 +37,34 @@
 			
 		</p>
 		 -->
-		 <input type="submit" value="Guardar"/>
-		 </fieldset>
-		<?php echo form_close();?>
-		
-	</body>
-</html>
+                </form>
+
+		<p>
+                    <a href="#" class="button_grey" id="btn_agregar_campos" >
+                            <img src="<?php echo base_url(); ?>images/icon_new.png" border="0" width="18px" />
+                            Agregar Campos
+                        </a>
+    <div class="clear"></div>
+                <form id="formAlter"  action="<?php echo base_url(); ?>index.php/licitaciones/nuevacampos/">
+                    <table id="tablaAlter" width="350px" border="1" class="box-table-b" style="display: none"> 
+                        <thead>
+                        <tr>
+                            <th colspan="2">Campos extras<input type="hidden" id="campos" name="campos" value="0" /></th>
+                        </tr>
+                        <tr>
+                            <th width="150">Campo</th>
+                            <th width="200">Valor</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <small>** Si no desea utilizar un campo dinamic creado simplemente ignorelo</small>
+                </form>
+		</p>
+                
+                
+    <div class="clear"></div>
+                    <a href="#" class="button_grey" id="btn_enviar" >
+                            <img src="<?php echo base_url(); ?>images/icon_success.gif" border="0" />
+                            Enviar Licitacion
+                        </a>
+    <div class="clear"></div>

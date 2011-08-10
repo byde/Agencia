@@ -380,6 +380,40 @@ a.inline_tip { padding-left:21px; background:url(../images/icons/lightbulb_off.g
 
 
 /*******************************************************************************
+  TABLE DESIGN 
+*******************************************************************************/
+.box-table-b {
+	font-size: 12px;
+	margin: 0px;
+	text-align: left;
+	border-collapse: separate;
+	border-bottom:none;
+}
+.box-table-b th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #EFEFEF;
+	border-top: 1px solid #FFF;
+	color: #333;
+	text-align: left;
+}
+.box-table-b td {
+	padding: 8px;
+	background: none; 
+	border-top: 1px solid #CCC;
+	color: #666;
+	border-bottom: none !important;
+}
+.box-table-b tr:hover td {
+	background: #FBFBFB;
+	color: #333;
+}
+.box-table-b tr.footer { background: none !important; }
+.box-table-b tr.footer:hover td { background: none !important;  }
+
+
+/*******************************************************************************
   PAGINATION
 *******************************************************************************/
 .pagination { border:0; margin:0; padding:0; font-size:10px; }
