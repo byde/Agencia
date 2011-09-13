@@ -14,7 +14,7 @@
     <tbody>
     <?php foreach ($licitaciones as $l): ?>
     <tr>
-        <td><?php echo  $l['descriptivo'] ?></td>
+        <td><a href="<?php echo base_url(); ?>index.php/licitaciones/ver/<?php echo $l['idlicitacion'] ?>" class="menutop"><?php echo $l['descriptivo'] ?></a></td>
         <td><?php echo $l['fin'] ?></td>
     </tr>
     <?php endforeach; ?>
