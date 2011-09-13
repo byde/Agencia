@@ -29,5 +29,12 @@ class Licitaciones_model extends CI_Model {
 		$this->db->select('licitaciones',$data);
 		return;
 	}
+	function mostrar_licitacion()
+	{
+		$this->db->select('licitaciones');
+		$query = $this->db->where('idlicitacion',$this->uri->segment(3));
+		return $query->result_array();
+		
+	}
 
 }

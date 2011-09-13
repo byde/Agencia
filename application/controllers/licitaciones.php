@@ -29,13 +29,12 @@ class Licitaciones extends CI_Controller
 	{	$this->load->view("formulario_ver_licitacion");
 		
 	}
-	public function ver()
+	public function mostrar_licitacion()
 	{
-		$data = array(
-			"descriptivo" =>$this->input->post('descriptivo')
-		);
 		$this->load->model("licitaciones_model");
-		$this->licitaciones_model->ver_coincidencias($data);
-		$this->index();
+		$this->licitaciones_model->mostrar_licitacion();
+		$this->load->view("formulario_ver_licitacion",$q);
+		
 	}
+	
 }
