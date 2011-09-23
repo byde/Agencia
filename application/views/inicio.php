@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Dashboard | Modern Admin</title>
+<title>Agencia Única | Uniendo empresas</title>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/960.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/reset.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/text.css" />
@@ -31,12 +31,12 @@
 	<ul class="group" id="menu_group_main">
 		<li class="item first" id="one"><a href="<?php echo base_url(); ?>index.php" class="main current"><span class="outer"><span class="inner dashboard">Pizarra</span></span></a></li>
         <li class="item middle" id="two"><a href="<?php echo base_url(); ?>index.php/licitaciones" class="main menutop"><span class="outer"><span class="inner content">Licitaciones</span></span></a></li>
-        <li class="item middle" id="three"><a href="#"><span class="outer"><span class="inner reports png">Reports</span></span></a></li>
-        <li class="item middle" id="four"><a href="#" class="main"><span class="outer"><span class="inner users">Users</span></span></a></li>
-		<li class="item middle" id="five"><a href="#" class="main"><span class="outer"><span class="inner media_library">Media Library</span></span></a></li>        
-		<li class="item middle" id="six"><a href="#" class="main"><span class="outer"><span class="inner event_manager">Event Manager</span></span></a></li>        
-		<li class="item middle" id="seven"><a href="#" class="main"><span class="outer"><span class="inner newsletter">Newsletter</span></span></a></li>        
-		<li class="item last" id="eight"><a href="#" class="main"><span class="outer"><span class="inner settings">Settings</span></span></a></li>        
+        <li class="item middle" id="three"><a href="#"><span class="outer"><span class="inner reports png">Reportes</span></span></a></li>
+        <li class="item middle" id="four"><a href="#" class="main"><span class="outer"><span class="inner users">Usuarios</span></span></a></li>
+		<li class="item middle" id="five"><a href="#" class="main"><span class="outer"><span class="inner media_library">Mis imagenes</span></span></a></li>        
+		<li class="item middle" id="six"><a href="#" class="main"><span class="outer"><span class="inner event_manager">Agenda</span></span></a></li>        
+		<li class="item middle" id="seven"><a href="#" class="main"><span class="outer"><span class="inner newsletter">Noticias</span></span></a></li>        
+		<li class="item last" id="eight"><a href="#" class="main"><span class="outer"><span class="inner settings">Configuraciones</span></span></a></li>        
     </ul>
 </div>
 <!-- MENU END -->
@@ -45,10 +45,10 @@
     <div class="grid_16" id="content">
     <!--  TITLE START  --> 
     <div class="grid_9">
-    <h1 class="dashboard">Dashboard</h1>
+    <h1 class="dashboard">Bienvenido</h1>
     </div>
     <!--RIGHT TEXT/CALENDAR-->
-    <div class="grid_6" id="eventbox"><a href="#" class="inline_calendar">You don't have any events for today! Yay!</a>
+    <div class="grid_6" id="eventbox"><a href="#" class="inline_calendar">No tienes ninguna licitación programa para el dia de hoy</a>
     	<div class="hidden_calendar"></div>
     </div>
     <!--RIGHT TEXT/CALENDAR END-->
@@ -61,8 +61,11 @@
       <div class="column" id="left">
       <!--THIS IS A PORTLET-->
 		<div class="portlet">
-            <div class="portlet-header"><img src="<?php echo base_url(); ?>images/icons/chart_bar.gif" width="16" height="16" alt="Reports" /> Visitors - Last 30 days</div>
+            <!--<div class="portlet-header"><img src="<?php echo base_url(); ?>images/icons/chart_bar.gif" width="16" height="16" alt="Reports" /> Visitors - Last 30 days</div>-->
+            <div class="portlet-header"> <h2>Acerca</h2></div>
             <div class="portlet-content">
+            	<p><h3>Agencia Única es un sistema innovador diseñado espcificamente para ti empresario, en el cual hallaras herramientas nunca antes vistas para contactar proveedores y negociar siempre teniendo en cuenta tu beneficio y satisfacción total.</h3></p>
+            	<p><h3>El empresario usuario del sistema Agencia Única puede hacer uso de dos perfiles, los cuales son proveedor y cliente, permitiendole cambiar entre pasar de uno a otro sin problema alguno.</h3></p>
             <!--THIS IS A PLACEHOLDER FOR FLOT - Report & Graphs -->
             <div id="placeholder" style="width:auto; height:250px;"></div>
             </div>
@@ -93,22 +96,22 @@
       <div class="column">
       <!--THIS IS A PORTLET-->        
       <div class="portlet">
-		<div class="portlet-header"><img src="<?php echo base_url(); ?>images/icons/comments.gif" width="16" height="16" alt="Comments" />Latest Comments</div>
+		<div class="portlet-header"><img src="<?php echo base_url(); ?>images/icons/comments.gif" width="16" height="16" alt="Comments" />Últimos comentarios</div>
 
 		<div class="portlet-content">
-         <p class="info" id="success"><span class="info_inner">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span></p>
-    <p class="info" id="error"><span class="info_inner">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span></p>
-    <p class="info" id="warning"><span class="info_inner">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span></p>
-<p class="info" id="info"><span class="info_inner">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span></p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+         <p class="info" id="success"><span class="info_inner">Fueron validadas 3 licitaciones satisfactoriamente</span></p>
+    <p class="info" id="error"><span class="info_inner">La fecha limite de entrega fue cambiada inesperadamente</span></p>
+    <p class="info" id="warning"><span class="info_inner">Existe una licitación duplicada</span></p>
+<p class="info" id="info"><span class="info_inner">Han sido registrados 15 usuarios nuevos el día de hoy</span></p>
+        </div>
        </div>    
       <!--THIS IS A PORTLET--> 
       <div class="portlet">
 		<div class="portlet-header"><img src="<?php echo base_url(); ?>images/icons/feed.gif" width="16" height="16" alt="Feeds" />Your selected News source					</div>
 		<div class="portlet-content">
         <ul class="news_items">
-        	<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean  adipiscing massa quis arcu interdum scelerisque. Duis vitae nunc nisi.  Quisque eget leo a nibh gravida vulputate ut sed nulla. <a href="#">Donec quis  lectus turpis, sed mollis nibh</a>. Donec ut mi eu metus ultrices  porttitor. Phasellus nec elit in nisi</li>
-            <li>Nunc convallis, enim quis tincidunt dictum, ante ipsum  interdum massa, consequat sodales arcu magna nec eros.<a href="#"> Vivamus nec  placerat odio.</a> Sed nec mi sed orci mattis feugiat. Etiam est dui,  rutrum nec dictum vel, accumsan id sem. </li>
+        	<li>Para la impresora HP 395-xcf es necario tener actulizados los drivers si se desea que funcione con XP. <a href="#">Donec quis  lectus turpis, sed mollis nibh</a>. Donec ut mi eu metus ultrices  porttitor. Phasellus nec elit in nisi</li>
+            <li>Es un portatil bastante potente, la verdad no creí que por el precio que pague pudiera recibir tan buen desempeño y calidad</li>
             <li>Nunc convallis, enim quis tincidunt dictum, ante ipsum  interdum massa, consequat sodales arcu magna nec eros.<a href="#"> Vivamus nec  placerat odio.</a> Sed nec mi sed orci mattis feugiat. Etiam est dui,  rutrum nec dictum vel, accumsan id sem. </li>
             <li>Nunc convallis, enim quis tincidunt dictum, ante ipsum  interdum massa, consequat sodales arcu magna nec eros.<a href="#"> Vivamus nec  placerat odio.</a> Sed nec mi sed orci mattis feugiat. Etiam est dui,  rutrum nec dictum vel, accumsan id sem. </li>
             <li>Nunc convallis, enim quis tincidunt dictum, ante ipsum  interdum massa, consequat sodales arcu magna nec eros.<a href="#"> Vivamus nec  placerat odio.</a> Sed nec mi sed orci mattis feugiat. </li>
