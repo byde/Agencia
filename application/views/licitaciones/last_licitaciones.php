@@ -18,6 +18,8 @@
         <td><?php echo $l['fin'] ?></td>
     </tr>
     <?php endforeach; ?>
+    
+    
     </tbody>
 </table>
     </div>

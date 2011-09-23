@@ -74,6 +74,8 @@ class Registros_control extends CI_Controller
 
             if ($this->form_validation->run() == FALSE) {
                 $this->load->view('autenticar_vista');
+                
+                
             } else {
                 $this->load->model('registros_modelo');
                 $exist = $this->registros_modelo->obtener_checar($_POST['nombrecorreoaut']);
@@ -85,13 +87,15 @@ class Registros_control extends CI_Controller
                     session_start();
                     $_SESSION['nombreocorreo'] = $_POST['nombrecorreoaut'];
                     //$this->session->set_userdata('usuario',$_POST['nombrecorreoaut'] );
-                    $this->load->view('principal_autenticado');
-                }
+                    //$this->load->view('principal_autenticado'); //esta linea si estaba activa
+					redirect('inicio');
+					
+				}
             }
         }
 
 
-		  function modificar_registrar()
+		function modificar_registrar()
 		{
 
 			session_start();
@@ -100,34 +104,26 @@ class Registros_control extends CI_Controller
 			$this->registros_modelo->modificar_perfil_modelo($id2);
 			$_SESSION['nombreocorreo']=$_POST['nombre_usuario'];
 			$this->load->view('principal_autenticado');
-		 }
+		}
 
         function modificar()
         {
-				session_start();
-				$id=$_SESSION['nombreocorreo'];
+			session_start();
+			$id=$_SESSION['nombreocorreo'];
             $this->load->model('registros_modelo');
             $datos2['perf'] = $this->registros_modelo->obtenerpor_id($id);
             $this->load->view('modificar_perfil',$datos2);	
             
             
         }
-
-
-
-        function aautenticar() 
-        {
-            $this->load->view('autenticar_vista');   
-        }
-
-
-		  function salir()
-	  	  {
+		function salir()
+	  	{
 			session_start();
 			session_destroy();
-			$this->load->view('inicio_bienvenida');
+			//$this->load->view('inicio_bienvenida');
+			redirect('inicio');
 			echo '<h4>cerraste sesion con exito</h4>';
-		  }
+		}
 
 	
 
