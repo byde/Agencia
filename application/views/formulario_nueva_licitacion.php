@@ -6,7 +6,7 @@
 		</div><!-- End demo-description -->
 		
 		<h3>Crear nueva licitacion</h3>
-                <form id="formNueva" action="<?php echo base_url(); ?>index.php/licitaciones/nueva" >
+            <form id="formNueva" action="<?php echo base_url(); ?>index.php/licitaciones/nueva" >
 		<p>
 			<label for="descriptivo">Nombre descriptivo:</label>
 			<input type="text" name="descriptivo" id="descriptivo" />
@@ -26,18 +26,15 @@
 			<label for="fin2">Fecha de finalizacion:</label>
 			<input type="text" id="fin2" />
 			<input type="hidden" name="fin" id="fin" />
-			
 		</p>
 		</div>
-		 
 		<!--
 		<p>
 			<label for="inicio">fecha de inicio</label>
 			<input type="text" name="inicio" id="inicio" />
-			
 		</p>
 		 -->
-                </form>
+            </form>
 
 		<p>
                     <a href="#" class="button_grey" id="btn_agregar_campos" >
@@ -49,7 +46,7 @@
                     <table id="tablaAlter" width="350px" border="1" class="box-table-b" style="display: none"> 
                         <thead>
                         <tr>
-                            <th colspan="2">Campos extras<input type="hidden" id="campos" name="campos" value="0" /></th>
+                            <th colspan="2">Agregar mas detalles<input type="hidden" id="campos" name="campos" value="0" /></th>
                         </tr>
                         <tr>
                             <th width="150">Campo</th>
@@ -57,13 +54,13 @@
                         </tr>
                         </thead>
                     </table>
-                    <small>** Si no desea utilizar un campo dinamic creado simplemente ignorelo</small>
+                    <small>** Si no desea agregar mas detalles simplemente omita este paso</small>
                 </form>
 		</p>
                 
                 
     <div class="clear"></div>
-                    <a href="#" class="button_grey" id="btn_enviar" >
+                    <a href="#" class="button_grey" id="btn_enviar">
                             <img src="<?php echo base_url(); ?>images/icon_success.gif" border="0" />
                             Enviar Licitacion
                         </a>

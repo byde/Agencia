@@ -5,7 +5,7 @@ class Licitaciones_model extends CI_Model {
     function __construct()
     {
         // Call the Model constructor
-        parent::__construct();
+    parent::__construct();
 	$this->load->database();
     }
     
@@ -64,5 +64,50 @@ class Licitaciones_model extends CI_Model {
                     return $q->result_array();
             return false;
         }
+///////////////////////////////////////////////
+		// Metodos comentarios
+		function get_last_licitaciones_comments($idlicitacion)
+    	{
+    		
+			$q = $this->db->get_where("comentarios", array("idlicitacion"=> $idlicitacion));
+			if ($q->num_rows() > 0)
+                   return $q->result_array();
+            return false;
+		}
+		function guardar_comentario_licitacion()
+		{
+		// campos: idcomentario idusuario fecha idlicitacion comentario	
+		$this->db->set("fecha", "NOW()", false);
+		$this->db->set($this->input->post());
+		$id = $this->db->insert('comentarios');
+		return $this->db->insert_id();
+		}
+///////////////////////////////////////////////
+		// Metodos oferta licitante (proveedor)
+		function guardar_oferta_licitacion()
+		{
+		//campos tabla oferta
+		//idoferta idusuario idlicitacion precio fecha nota
+		$this->db->set("fecha", "NOW()", false);
+		$this->db->set($this->input->post());
+		$id = $this->db->insert('ofertas');
+		return $this->db->insert_id();
+		}
+		
+		
+		
+		
+		
+		
+		function guardar_campos_oferta_licitacion()
+		{
+		//campos
+		//campos tabla camposoferta idcxo idoferta idcampo valor
+			
+		}
+		
+		
+		
+		
 
 }
