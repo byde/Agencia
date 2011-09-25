@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Dashboard | Modern Admin</title>
+<title>Agencia Única | Uniendo empresas</title>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/960.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/reset.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/text.css" />
@@ -41,10 +41,15 @@
     <div class="grid_9">
     <h1 class="dashboard">Portada</h1>
     </div>
+    <!--RIGHT TEXT/CALENDAR-->
+    <div class="grid_6" id="eventbox"><a href="#" class="inline_calendar">No tienes ninguna licitación programa para el dia de hoy</a>
+    	<div class="hidden_calendar"></div>
+    </div>
     <!--RIGHT TEXT/CALENDAR END-->
     <div class="clear">
     </div>
     <!--  TITLE END  -->    
+
     <div class="clear"> </div>
 <!-- END CONTENT-->    
   </div>

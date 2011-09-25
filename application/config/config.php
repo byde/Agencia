@@ -15,6 +15,7 @@
 |
 */
 $config['base_url']	= 'http://localhost/agenciaunica';
+//$config['base_url']	= 'http://localhost:8888/agencia';
 
 /*
 |--------------------------------------------------------------------------
