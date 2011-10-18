@@ -4,7 +4,7 @@ a:hover { text-decoration: underline; color: #C00; }
 #logo { font-size:24px; font-style:italic; font-weight:normal; color:white; line-height:69px; }
 #header { background:url(../images/bg_header_blue.gif) left top no-repeat; height:123px; }
 #content { background:url(../images/bg_content.gif) left top repeat-x #FFFFFF; width:938px !important; border-left:1px solid #9c9c9c; border-right:1px solid #9c9c9c; padding: 10px 0px;}
-#textcontent { padding:10px !important; width:900px !important; } 
+#textcontent { padding:10px !important; width:900px !important; }
 #wrapper { padding-bottom:10px !important; background:url(../images/bg_content_bottom.gif) center bottom no-repeat; }
 #footer { text-align:center; padding:15px 0px; color: #666; font-size:11px; }
 .hidden { display:none; }
@@ -289,7 +289,7 @@ a.inline_tip { padding-left:21px; background:url(../images/icons/lightbulb_off.g
   color: #1b486a !important;	
 }
 /*******************************************************************************
-  PORTLETS AND GRID
+  PORTLETS AND 
 *******************************************************************************/
 #portlets { padding:0px 10px; }
 .column { width: 450px; float: left; padding-bottom: 0px; }

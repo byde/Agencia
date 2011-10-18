@@ -5,14 +5,13 @@ $(function() {
         altFormat: 'yy-mm-dd',
         dateFormat: 'dd-mm-yy'
     });
-                
+              
     $("#formAlter").submit(function(e){
         e.preventDefault();
     });
     $("#formNueva").submit(function(e){
         e.preventDefault();
     });
-                    
     $("#btn_agregar_campos").click(function(e){
         e.preventDefault();
         //necesario agregar validacion para que no ingrese el mismo campoNombre 2 veces
@@ -40,8 +39,8 @@ $(function() {
                         type: "POST",
                         data: $("#formAlter").serialize(),
                         success: function(){
-                            $("#content").load("<?php echo base_url(); ?>index.php/licitaciones");
                             alert("Ha sido creada la licitación");
+                            $("#content").load("index.php/licitaciones");
                         }
                     });
             }
@@ -59,8 +58,6 @@ $(function() {
             }
         });
     });
-    
-    
     // Comentarios
     // form para crear comentario
     $("#formNuevaComentario").submit(function(e){
@@ -81,14 +78,12 @@ $(function() {
                 if (data == 0)
                     alert("error");
                 else{           
-                     $("#content").load("<?php echo base_url(); ?>index.php/licitaciones");
                      alert("El comentario ha sido publicado");
+                     $("#content").load("index.php/licitaciones");
                     }
-                    
             }
         });
     });
-    
     //licitante (proveedor)
     $("#btn_ofertar_licitacion_comentario").click(function(e){
         e.preventDefault();
@@ -100,14 +95,14 @@ $(function() {
                 if (data == 0)
                     alert("error");
                 else{           
-                     $("#content").load("<?php echo base_url(); ?>index.php/licitaciones");
                      alert("La oferta ha sido guardada");
+                     $("#content").load("index.php/licitaciones");
                     }
-                    
             }
         });
     });
-    
-    
-    
+    //mostrar opcion subir imagen
+    $("#mostrar_subir_img").submit(function(e){
+        $("#responder_a_form").show('slow');
+    });
 });
