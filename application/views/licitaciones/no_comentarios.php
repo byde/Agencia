@@ -1,8 +1,3 @@
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/estilo_opciones_licitacion.css" />
-		<script type="text/javascript" src="<?php echo base_url(); ?>js/licitaciones.js"></script>
-		<div style="display: none;" class="demo-description">
-		
-		</div><!-- End demo-description -->
 <table width="80%" cellpadding="0" cellspacing="0" id="box-table-a">
     <tr>
     	<td colspan="2"><h1>No hay comentarios para<?php echo " ".$licitacion['descriptivo']; ?></h1></td>

@@ -19,7 +19,7 @@
 <!-- WRAPPER START -->
 <div class="container_16" id="wrapper">	
   	<!--LOGO-->
-	<div class="grid_8" id="logo"><a href="http://nicetheme.net" target="_blank" style="color: #FFFFFF">Agenda Unica</a></div>
+	<div class="grid_8" id="logo"><a href="http://nicetheme.net" target="_blank" style="color: #FFFFFF">Agencia Única</a></div>
     <div class="grid_8">
 <!-- USER TOOLS START -->
       <div id="user_tools"><span><?php echo $sesion; ?></span></div>
@@ -29,18 +29,41 @@
 <!-- MENU START -->
 <div id="menu">
 	<ul class="group" id="menu_group_main">
-		<li class="item first" id="one"><a href="<?php echo base_url(); ?>index.php" class="main current"><span class="outer"><span class="inner dashboard">Portada</span></span></a></li>
-        <li class="item middle" id="two"><a href="<?php echo base_url(); ?>index.php/licitaciones" class="main menutop"><span class="outer"><span class="inner content">Licitaciones</span></span></a></li>
+		<li class="item first" id="one"><a href="<?php echo base_url(); ?>index.php" class="main current"><span class="outer"><span class="inner dashboard">Inicio</span></span></a></li>
+        <li class="item middle" id="two"><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_mis_licitaciones" class="main menutop"><span class="outer"><span class="inner content">Cliente</span></span></a></li>
+        <li class="item middle" id="three"><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_ultimas_licitaciones" class="main menutop"><span class="outer"><span class="inner reports png">Proveedor</span></span></a></li>
+        <li class="item middle" id="four"><a href="#" class="main"><span class="outer"><span class="inner users">Usuarios</span></span></a></li>
+		<li class="item middle" id="five"><a href="#" class="main"><span class="outer"><span class="inner media_library">Media Library</span></span></a></li>        
+		<li class="item middle" id="six"><a href="#" class="main"><span class="outer"><span class="inner event_manager">Agenda</span></span></a></li>        
+		<li class="item middle" id="seven"><a href="<?php echo base_url(); ?>index.php/ayuda" class="main menutop"><span class="outer"><span class="inner newsletter">Ayuda</span></span></a></li>        
+		<li class="item last" id="eight"><a href="<?php echo base_url(); ?>index.php/herramientas" class="main menutop"><span class="outer"><span class="inner settings">Herramientas</span></span></a></li>
     </ul>
 </div>
 <!-- MENU END -->
 </div> 
+
 <!-- CONTENT START -->
     <div class="grid_16" id="content">
+    <!--<div style="background-image: url("<?php echo base_url();?>images/icon_new.png");"></div>-->
+    
     <!--  TITLE START  --> 
     <div class="grid_9">
-    <h1 class="dashboard">Portada</h1>
+    <h1 class="dashboard">Bienvenido</h1>
+    <div style="color:#333; margin: 0px 0px 0px 20px;">
+    	<p>Agencia Única es un sistema para empresas, diseñado para obtener precios bajos y conocer al mejor proveedor de los productos que deseamos comprar.</p>
+    	<p>Toda empresa compra y vende, por lo que en Agencia Única ambos perfiles pueden ser manejados.</p>
+    	
+    	<p>¿Como funciona?</p>
+    	<p>Simplemente registra tu empresa, y una vez validada, podras especificar uno o varios productos que deseas adquirir y una serie de ofertas de diferentes proveedores llegaran a ti.</p>
+    	   	
+    	
     </div>
+    <div><img src="<?php echo base_url();?>images/logo_AU.png"></div>
+    
+    
+    </div>
+    
+    
     <!--RIGHT TEXT/CALENDAR-->
     <div class="grid_6" id="eventbox"><a href="#" class="inline_calendar">No tienes ninguna licitación programa para el dia de hoy</a>
     	<div class="hidden_calendar"></div>
@@ -53,13 +76,14 @@
     <div class="clear"> </div>
 <!-- END CONTENT-->    
   </div>
+  
 <div class="clear"> </div>
 
 </div>
 <!-- WRAPPER END -->
 <!-- FOOTER START -->
 <div class="container_16" id="footer">
-Website Administration Share by <a href="http://nicetheme.net/">Nice Theme</a></div>
+Agencia Unica Copyright<a href="http://nicetheme.net/"> AU 2011</a></div>
 <!-- FOOTER END -->
 <div id="dia" title="Iniciar Sesión"></div>
 <div id="dia_reg" title="Registrarse"></div>

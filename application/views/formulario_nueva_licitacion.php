@@ -1,11 +1,21 @@
-
-	 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/estilo_opciones_licitacion.css" />
-		<script type="text/javascript" src="<?php echo base_url(); ?>js/licitaciones.js"></script>
-		<div style="display: none;" class="demo-description">
-		
-		</div><!-- End demo-description -->
-		
-		<h3>Crear nueva licitacion</h3>
+<div class="grid_16">
+<!-- TABS START -->
+    <div id="tabs">
+         
+            <ul>
+                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_mis_licitaciones" class="menutop"><span>Mis Licitaciones</span></a></li>
+                      <li><a href="#" class="current"><span>Crear Licitación</span></a></li>
+                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_buscar_producto" class="menutop"><span>Buscar Producto</span></a></li>
+                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_historial" class="menutop"><span>Historial</span></a></li>
+            </ul>
+        
+    </div>
+<!-- TABS END -->    
+</div>
+<div class="grid_8">
+		<br>
+		<br>
+		<h2>Crear nueva licitacion</h2>
             <form id="formNueva" action="<?php echo base_url(); ?>index.php/licitaciones/nueva" >
 		<p>
 			<label for="descriptivo">Nombre descriptivo:</label>
@@ -57,11 +67,8 @@
                     <small>** Si no desea agregar mas detalles simplemente omita este paso</small>
                 </form>
 		</p>
-                
-                
-    <div class="clear"></div>
-                    <a href="#" class="button_grey" id="btn_enviar">
+                       <a href="#" class="button_grey" id="btn_enviar">
                             <img src="<?php echo base_url(); ?>images/icon_success.gif" border="0" />
                             Enviar Licitacion
                         </a>
-    <div class="clear"></div>
+    </div>
