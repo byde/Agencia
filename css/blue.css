@@ -3,7 +3,7 @@ a, a:active, a:link, a:visited { text-decoration:none; color: #069; }
 a:hover { text-decoration: underline; color: #C00; }
 #logo { font-size:24px; font-style:italic; font-weight:normal; color:white; line-height:69px; }
 #header { background:url(../images/bg_header_blue.gif) left top no-repeat; height:123px; }
-#content { background:url(../images/bg_content.gif) left top repeat-x #FFFFFF; width:938px !important; border-left:1px solid #9c9c9c; border-right:1px solid #9c9c9c; padding: 10px 0px;}
+#content { background:#FFFFFF; width:938px !important; border-left:1px solid #9c9c9c; border-right:1px solid #9c9c9c; padding: 10px 0px;}
 #textcontent { padding:10px !important; width:900px !important; }
 #wrapper { padding-bottom:10px !important; background:url(../images/bg_content_bottom.gif) center bottom no-repeat; }
 #footer { text-align:center; padding:15px 0px; color: #666; font-size:11px; }
@@ -27,7 +27,7 @@ a.approve_inline { background:url(../images/icons/action_check.gif) no-repeat le
 h1 { font-size:22px; color: #1b486a; display: block; margin-top: 10px;}
 h1.dashboard { background:url(../images/icon_dashboard_small.gif) left 3px no-repeat; padding-left:35px;}
 h1.content_edit { background:url(../images/icon_content_small.gif) left 3px no-repeat; padding-left:35px;}
-h2 { font-size:18px !important; }
+h2 { font-size:18px; }
 h3 { font-size: 13px !important; }
 /*******************************************************************************
   EVENTBOX (title -> rightbox)
@@ -51,15 +51,14 @@ a.inline_tip { padding-left:21px; background:url(../images/icons/lightbulb_off.g
   USER TOOLS
 *******************************************************************************/
 #user_tools {
-	background:url(../images/bg_usertools_right.gif) right top no-repeat;
-	height:34px;
-	padding-right:9px;
 	float:right;
+	background-color:rgba(0,0,0,0.5);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 #user_tools span {
-	background:url(../images/bg_usertools_left.gif) left top no-repeat #000000;
 	height:34px;
-	padding-left:9px;
+	padding:9px;
 	line-height: 34px;
 	font-size:18px;
 	color: #b0b0b0;
