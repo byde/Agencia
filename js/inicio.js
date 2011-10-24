@@ -65,4 +65,51 @@ $(function(){
             }
         }
     });
+	
+	var primerCarta = $("#wrapper-navegador .carta-dialogo:eq(0)");
+	primerCarta.show();
+	$("#info-principal-navegacion a").click(function(){
+				var id = $(this).attr("id").substring(5);
+                $("#wrapper-navegador .carta-dialogo").hide();
+                cambiaTituloNavegacionBienvenida(id, $("#dialogo-"+id));
+		return false;
+	});
+	
+	$("#wrapper-navegador .siguiente-navegacion").click(function(){
+		var cartas = $("#wrapper-navegador .carta-dialogo");
+		cartas.each(function(elemento){
+			var elemento = $(this);
+			if(elemento.is(":visible")){
+				var siguiente = (elemento.next().length != 0)? elemento.next() : primerCarta;
+				cartas.hide();
+				cambiaTituloNavegacionBienvenida(siguiente.attr("id").substring(8), siguiente);
+				return;
+			}
+		});
+		return false;
+	});
+
+	function cambiaTituloNavegacionBienvenida(id, elementoContenido){
+		var titulo = $("#pregunta-principal h2").fadeOut(100, function(){
+			var nuevoTitulo = "";
+			if(id == "quees"){
+				nuevoTitulo = "&iquest;Qu&eacute; es?...";
+			}else if(id == "como-funciona"){
+				nuevoTitulo = "&iquest;C&oacute;mo funciona?";
+			}else if(id == "como-comprar"){
+				nuevoTitulo = "&iquest;C&oacute;mo comprar?...";
+			}else if(id == "como-vender"){
+				nuevoTitulo = "&iquest;C&oacute;mo vender?...";
+			}
+			titulo.fadeIn("slow", function(){
+				elementoContenido.fadeIn();
+			}).html(nuevoTitulo);
+		});
+	}
+	$("#video-link-principal").click(function(){
+		return false;
+	});
+	function l(m){
+		console.log(m);
+	}
 });

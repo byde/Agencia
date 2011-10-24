@@ -7,8 +7,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/reset.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/text.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/blue.css" />
-<link type="text/css" href="<?php echo base_url(); ?>css/smoothness/ui.css" rel="stylesheet" />
-    <link href='<?php echo base_url(); ?>css/cupertino/jquery-ui-1.8.10.custom.css' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/smoothness/ui.css"/>
+<link rel="stylesheet" type='text/css' href='<?php echo base_url(); ?>css/cupertino/jquery-ui-1.8.10.custom.css' />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/agencia.unica.css"/>
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rancho'>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.6.1.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-ui-1.8.10.custom.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/inicio.js"></script>
@@ -19,7 +21,7 @@
 <!-- WRAPPER START -->
 <div class="container_16" id="wrapper">	
   	<!--LOGO-->
-	<div class="grid_8" id="logo"><a href="http://nicetheme.net" target="_blank" style="color: #FFFFFF">Agencia Única</a></div>
+	<div class="grid_8" id="logo"><a href="./" target="_blank" style="color: #FFFFFF">Agencia Única</a></div>
     <div class="grid_8">
 <!-- USER TOOLS START -->
       <div id="user_tools"><span><?php echo $sesion; ?></span></div>
@@ -47,30 +49,81 @@
     <!--<div style="background-image: url("<?php echo base_url();?>images/icon_new.png");"></div>-->
     
     <!--  TITLE START  --> 
-    <div class="grid_9">
-    <h1 class="dashboard">Bienvenido</h1>
-    <div style="color:#333; margin: 0px 0px 0px 20px;">
-    	<p>Agencia Única es un sistema para empresas, diseñado para obtener precios bajos y conocer al mejor proveedor de los productos que deseamos comprar.</p>
-    	<p>Toda empresa compra y vende, por lo que en Agencia Única ambos perfiles pueden ser manejados.</p>
-    	
-    	<p>¿Como funciona?</p>
-    	<p>Simplemente registra tu empresa, y una vez validada, podras especificar uno o varios productos que deseas adquirir y una serie de ofertas de diferentes proveedores llegaran a ti.</p>
-    	   	
-    	
-    </div>
-    <div><img src="<?php echo base_url();?>images/logo_AU.png"></div>
-    
-    
-    </div>
-    
-    
-    <!--RIGHT TEXT/CALENDAR-->
-    <div class="grid_6" id="eventbox"><a href="#" class="inline_calendar">No tienes ninguna licitación programa para el dia de hoy</a>
-    	<div class="hidden_calendar"></div>
-    </div>
+    <div class="info-principal-contenedor">
+		<div id="info-principal" class="grid_9">
+			<div id="pregunta-principal" class="fl"><h2>¿Qué es?...</h2></div>
+			<div id="video-contenedor-principal" class="fl">
+				<span class="intro-span-video fl">Intro rápido</span>
+				<div class="video-contenedor fl">
+					<a id="video-link-principal" href="#link-a-video" class="video-principal">
+						Video Principal
+					</a>
+				</div>
+				<div class="cl"></div>
+			</div>
+		</div>
+		<div class="cl"></div>
+		<div id="wrapper-navegador">
+			<div class="navegador">
+				<div class="contenedor-dialogo">
+					<div class="efecto"></div>
+					<div class="dialogo">
+						<div id="dialogo-quees" class="carta-dialogo">
+							<div class="imagen-carta fl">
+								<img src="images/quees.png"/>
+							</div>
+							<div class="texto-carta fl">
+								<p><strong>Agencia Única</strong> lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p><a href="#">Más Información</a></p>
+							</div>
+							<div class="cl"></div>
+						</div>
+						<div id="dialogo-como-funciona" class="carta-dialogo">
+							<div class="imagen-carta fl">
+								<img src="images/comofunciona.png" height="97px" />
+							</div>
+							<div class="texto-carta fl">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p><a href="#">Más Información</a></p>
+							</div>
+							<div class="cl"></div>
+						</div>
+						<div id="dialogo-como-comprar" class="carta-dialogo">
+							<div class="imagen-carta fl">
+								<img src="images/comocomprar.png" />
+							</div>
+							<div class="texto-carta fl">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p><a href="#">Más Información</a></p>
+							</div>
+							<div class="cl"></div>
+						</div>
+						<div id="dialogo-como-vender" class="carta-dialogo">
+							<div class="imagen-carta fl">
+								<img src="images/comovender.png" />
+							</div>
+							<div class="texto-carta fl">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p><a href="#">Más Información</a></p>
+							</div>
+							<div class="cl"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="siguiente-navegacion" href="#">Siguiente</a>
+		</div>
+		<div id="info-principal-navegacion">
+			<ul>
+				<li><a id="menu-quees" href="#">¿Qué es?</a></li>
+				<li><a id="menu-como-funciona" href="#">¿Cómo funciona?</a></li>
+				<li><a id="menu-como-comprar" href="#">¿Cómo comprar?</a></li>
+				<li><a id="menu-como-vender" href="#">¿Cómo vender?</a></li>
+			</ul>
+			<div class="cl"></div>
+		</div>
+	</div>
     <!--RIGHT TEXT/CALENDAR END-->
-    <div class="clear">
-    </div>
     <!--  TITLE END  -->    
 
     <div class="clear"> </div>
