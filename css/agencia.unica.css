@@ -8,14 +8,14 @@
 }
 #logo a{
 	display:block;
-	width:148px;
-	height:100px;
+	width: 101px;
+	height: 70px;
 	background: url(../images/logo_sprite.png) no-repeat;
 	text-indent:-999px;
     margin-top:7px;
 }
 #logo a:hover{
-	background: url(../images/logo_sprite.png) 0 -101px no-repeat;
+	background: url(../images/logo_sprite.png) 0 -71px no-repeat;
 }
 #info-principal{
 	border-radius: 15px;
@@ -32,7 +32,7 @@ div.info-principal-contenedor{
 #pregunta-principal h2{
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #4891dc;
-    font-size: 6em;
+    font-size: 4em;
     text-align: center;
     text-shadow: 1px 1px 1px #002878;
 	
@@ -43,16 +43,20 @@ div.info-principal-contenedor{
 	background:#ccc;
 }
 .intro-span-video{
-	color: #ED8E78;
+	color: #63AC0F;
     display: block;
     font-family: 'Rancho',cursive;
-    font-size: 4em;
+    font-size: 3em;
     margin: 0 10px 0 0;
+}
+#video-contenedor-principal{
+	margin-bottom: 10px;
+    margin-left: 120px;
 }
 #video-contenedor-principal .video-principal{
 	background: url(../images/vide-thumb.png) no-repeat;
-	width: 212px;
-	height:111px;
+	width: 140px;
+	height: 80px;
 	display:block;
 	text-indent:-999px;
 	opacity:0.7;
@@ -64,7 +68,7 @@ div.info-principal-contenedor{
 #wrapper-navegador{
 	background: #3e7fb1;
 	width: 897px;
-	height: 300px;
+	height: 190px;
 	margin: 0 auto 0 22px;
 	position: relative;
 }
@@ -90,17 +94,17 @@ div.info-principal-contenedor{
 	background: #FFF;
     border-radius: 8px;
     box-shadow: 0 6px 5px #444;
-    height: 180px;
-    margin-top: -1px;
-    padding: 30px;
+    height: 135px;
+    margin-top: -17px;
+    padding: 10px 10px 20px;
     width: 500px;
 }
 .siguiente-navegacion{
 	height: 70px;
     position: absolute;
-    right: 90px;
+    right: 100px;
     text-indent: -999px;
-    top: 110px;
+    top: 55px;
     width: 70px;
 	background: url(../images/arrow-next.jpg) no-repeat;
 }
@@ -124,6 +128,7 @@ div.info-principal-contenedor{
     padding: 10px 0;
 	margin:0 10px 0 10px;
 	width: 100%;
+	height: 65px;
 }
 #info-principal-navegacion ul{
 	display:block;
@@ -132,13 +137,22 @@ div.info-principal-contenedor{
 }
 #info-principal-navegacion ul li{
 	list-style:none;
+	display:block;
+	float:left;
+	width: 81px;
+	height: 58px;
+	position:relative;
+	margin-left:50px;
+}
+#info-principal-navegacion ul li span{
+	font-size:11px;
+	color:#b90f02;
 }
 #info-principal-navegacion ul li a{
 	display:block;
 	float:left;
-	width:104px;
-	height:104px;
-	margin-left:30px;
+	width:58px;
+	height: 58px;
 	text-indent:-999px;
 	opacity:0.6;
 }
@@ -152,16 +166,31 @@ div.info-principal-contenedor{
 	background: url(../images/sprite_menu.jpg) 0 0 no-repeat;
 }
 #menu-como-funciona{
-	background: url(../images/sprite_menu.jpg) -208px 0 no-repeat;
+	background: url(../images/sprite_menu.jpg) -116px 0 no-repeat;
 }
 #menu-como-comprar{
-	background: url(../images/sprite_menu.jpg) -104px 0 no-repeat;
+	background: url(../images/sprite_menu.jpg) -58px 0 no-repeat;
 }
 #menu-como-vender{
-	background: url(../images/sprite_menu.jpg) -312px 0 no-repeat;
+	background: url(../images/sprite_menu.jpg) -174px 0 no-repeat;
+}
+
+.mas-informacion-paginas{
+	padding: 10px;
+}
+.mas-informacion-paginas p{
+	line-height: 25px;
+	margin: 20px 40px 0 40px;
+}
+
+#jp_container_1{
+	height:470px;
 }
 
 /* Extras */
+.oculto{
+	display:none;
+}
 .fl{
 	float:left;
 }
@@ -173,4 +202,7 @@ div.info-principal-contenedor{
 }
 .cr{
 	clear:right;
+}
+.cb{
+	clear:both;
 }
