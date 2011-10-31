@@ -106,8 +106,26 @@ $(function(){
 			}).html(nuevoTitulo);
 		});
 	}
-	$("#video-link-principal").click(function(){
-		return false;
+	
+	$("#video-link-principal").fancybox({
+        'titlePosition'		: 'outside',
+        'overlayColor'		: '#000',
+        'overlayOpacity'	: 0.9
+    });
+	
+	$(".masinformacion").fancybox({
+		'titleShow'     : false,
+		'transitionIn'	: 'elastic',
+		'transitionOut'	: 'elastic',
+		'easingIn'      : 'easeOutBack',
+		'easingOut'     : 'easeInBack',
+		'overlayColor'	: '#fff'
+	});
+	
+	$("#info-principal-navegacion .link-menu").hover(function(){
+		$(this).next().show();
+	}, function(){
+		$(this).next().hide();
 	});
 	function l(m){
 		console.log(m);
