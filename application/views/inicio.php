@@ -10,9 +10,11 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/smoothness/ui.css"/>
 <link rel="stylesheet" type='text/css' href='<?php echo base_url(); ?>css/cupertino/jquery-ui-1.8.10.custom.css' />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/agencia.unica.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/fancy.css"/>
 <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rancho'>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.6.1.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-ui-1.8.10.custom.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>js/inicio.js"></script>
 
 </head>
@@ -53,9 +55,9 @@
 		<div id="info-principal" class="grid_9">
 			<div id="pregunta-principal" class="fl"><h2>¿Qué es?...</h2></div>
 			<div id="video-contenedor-principal" class="fl">
-				<span class="intro-span-video fl">Intro rápido</span>
+				<span class="intro-span-video fl">Promo</span>
 				<div class="video-contenedor fl">
-					<a id="video-link-principal" href="#link-a-video" class="video-principal">
+					<a id="video-link-principal" href="<?php echo base_url(); ?>index.php/paginas_extras/promo" class="video-principal">
 						Video Principal
 					</a>
 				</div>
@@ -74,7 +76,7 @@
 							</div>
 							<div class="texto-carta fl">
 								<p><strong>Agencia Única</strong> lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p><a href="#">Más Información</a></p>
+								<p><a class="masinformacion" href="<?php echo base_url(); ?>index.php/paginas_extras/quees">Más Información</a></p>
 							</div>
 							<div class="cl"></div>
 						</div>
@@ -84,7 +86,7 @@
 							</div>
 							<div class="texto-carta fl">
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p><a href="#">Más Información</a></p>
+								<p><a class="masinformacion" href="<?php echo base_url(); ?>index.php/paginas_extras/comofunciona">Más Información</a></p>
 							</div>
 							<div class="cl"></div>
 						</div>
@@ -94,17 +96,17 @@
 							</div>
 							<div class="texto-carta fl">
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p><a href="#">Más Información</a></p>
+								<p><a class="masinformacion" href="<?php echo base_url(); ?>index.php/paginas_extras/comocomprar">Más Información</a></p>
 							</div>
 							<div class="cl"></div>
 						</div>
 						<div id="dialogo-como-vender" class="carta-dialogo">
 							<div class="imagen-carta fl">
-								<img src="images/comovender.png" />
+								<img src="images/comovender.png" height="145px" />
 							</div>
 							<div class="texto-carta fl">
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<p><a href="#">Más Información</a></p>
+								<p><a class="masinformacion" href="<?php echo base_url(); ?>index.php/paginas_extras/comovender">Más Información</a></p>
 							</div>
 							<div class="cl"></div>
 						</div>
@@ -115,10 +117,10 @@
 		</div>
 		<div id="info-principal-navegacion">
 			<ul>
-				<li><a id="menu-quees" href="#">¿Qué es?</a></li>
-				<li><a id="menu-como-funciona" href="#">¿Cómo funciona?</a></li>
-				<li><a id="menu-como-comprar" href="#">¿Cómo comprar?</a></li>
-				<li><a id="menu-como-vender" href="#">¿Cómo vender?</a></li>
+				<li><a id="menu-quees" class="link-menu" href="#">¿Qué es?</a><span class="oculto">¿Qué es?</span></li>
+				<li><a id="menu-como-funciona" class="link-menu" href="#">¿Cómo funciona?</a><span class="oculto">¿Cómo funciona?</span></li>
+				<li><a id="menu-como-comprar" class="link-menu" href="#">¿Cómo comprar?</a><span class="oculto">¿Cómo comprar?</span></li>
+				<li><a id="menu-como-vender" class="link-menu" href="#">¿Cómo vender?</a><span class="oculto">¿Cómo vender?</span></li>
 			</ul>
 			<div class="cl"></div>
 		</div>
