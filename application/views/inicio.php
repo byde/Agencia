@@ -19,7 +19,7 @@
 <!-- WRAPPER START -->
 <div class="container_16" id="wrapper">	
   	<!--LOGO-->
-	<div class="grid_8" id="logo"><a href="http://nicetheme.net" target="_blank" style="color: #FFFFFF">Agencia Única</a></div>
+	<div class="grid_8" id="logo"><a href="http://nicetheme.net" target="_blank" style="color: #FFFFFF"><img src="<?php echo base_url();?>images/logo_AU.png" height="100" width="200"></a></div>
     <div class="grid_8">
 <!-- USER TOOLS START -->
       <div id="user_tools"><span><?php echo $sesion; ?></span></div>
@@ -30,13 +30,14 @@
 <div id="menu">
 	<ul class="group" id="menu_group_main">
 		<li class="item first" id="one"><a href="<?php echo base_url(); ?>index.php" class="main current"><span class="outer"><span class="inner dashboard">Inicio</span></span></a></li>
-        <li class="item middle" id="two"><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_mis_licitaciones" class="main menutop"><span class="outer"><span class="inner content">Cliente</span></span></a></li>
-        <li class="item middle" id="three"><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_ultimas_licitaciones" class="main menutop"><span class="outer"><span class="inner reports png">Proveedor</span></span></a></li>
-        <li class="item middle" id="four"><a href="#" class="main"><span class="outer"><span class="inner users">Usuarios</span></span></a></li>
-		<li class="item middle" id="five"><a href="#" class="main"><span class="outer"><span class="inner media_library">Media Library</span></span></a></li>        
-		<li class="item middle" id="six"><a href="#" class="main"><span class="outer"><span class="inner event_manager">Agenda</span></span></a></li>        
-		<li class="item middle" id="seven"><a href="<?php echo base_url(); ?>index.php/ayuda" class="main menutop"><span class="outer"><span class="inner newsletter">Ayuda</span></span></a></li>        
-		<li class="item last" id="eight"><a href="<?php echo base_url(); ?>index.php/herramientas" class="main menutop"><span class="outer"><span class="inner settings">Herramientas</span></span></a></li>
+        <li class="item middle" id="two"><a href="<?php echo base_url(); ?>index.php/cliente/" class="main menutop"><span class="outer"><span class="inner content">Cliente</span></span></a></li>
+        <li class="item middle" id="three"><a href="<?php echo base_url(); ?>index.php/proveedor/" class="main menutop"><span class="outer"><span class="inner proveedor png">Proveedor</span></span></a></li>
+        <li class="item middle" id="four"><a href="#" class="main"><span class="outer"><span class="inner empresas">Empresas</span></span></a></li>
+		<li class="item middle" id="five"><a href="#" class="main"><span class="outer"><span class="inner productos">Cat.Productos</span></span></a></li>        
+		<!--<li class="item middle" id="six"><a href="#" class="main"><span class="outer"><span class="inner event_manager">Agenda</span></span></a></li>-->        
+		<li class="item middle" id="eight"><a href="<?php echo base_url(); ?>index.php/herramientas" class="main menutop"><span class="outer"><span class="inner settings">Herramientas</span></span></a></li>
+		<li class="item last" id="seven"><a href="<?php echo base_url(); ?>index.php/ayuda" class="main menutop"><span class="outer"><span class="inner acerca">Ayuda</span></span></a></li>        
+		
     </ul>
 </div>
 <!-- MENU END -->

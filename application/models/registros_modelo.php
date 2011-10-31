@@ -56,7 +56,7 @@ class Registros_modelo extends CI_Model {
     function is_logged()
     {
         session_start();
-        if(isset($_SESSION['nombreocorreo']))
+		if(isset($_SESSION['nombreocorreo']))
             $r = true;
         else
             $r = false;
@@ -65,10 +65,12 @@ class Registros_modelo extends CI_Model {
     }
     
     function get_user()
-    {
+    {	//session_register('idd');
+		$dat=$this->obtenerpor_id($_SESSION['nombreocorreo']);
+		$_SESSION['idd']=$dat['idUsuario'];
         return $_SESSION['nombreocorreo'];
     }
-
+	
 }
 
 ?>

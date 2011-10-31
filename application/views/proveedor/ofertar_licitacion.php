@@ -1,5 +1,7 @@
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/estilo_opciones_licitacion.css" />
+<script type="text/javascript" src="<?php echo base_url(); ?>js/licitaciones.js"></script>
 <div class="grid_8">
-	<form id="formOfertarLicitacion" action="<?php echo base_url(); ?>index.php/licitaciones/nueva_oferta_licitacion">
+	<form id="formOfertarLicitacion" action="<?php echo base_url(); ?>index.php/proveedor/nueva_oferta_licitacion">
 	<table>
 		<br>
 		<br>

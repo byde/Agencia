@@ -4,9 +4,9 @@
          
             <ul>
                       <li><a href="#" class="current"><span>Últimas Licitaciones</span></a></li>
-                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_buscar_licitacion" class="menutop"><span>Buscar Licitaciones</span></a></li>
-                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_licitaciones_sugeridas" class="menutop"><span>Licitaciones Sugeridas</span></a></li>
-                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_catalogo_productos" class="menutop"><span>Catalogos de Productos</span></a></li>
+                      <li><a href="<?php echo base_url(); ?>index.php/proveedor/buscar_licitacion" class="menutop"><span>Buscar Licitaciones</span></a></li>
+                      <li><a href="<?php echo base_url(); ?>index.php/proveedor/licitaciones_sugeridas" class="menutop"><span>Licitaciones Sugeridas</span></a></li>
+                      <li><a href="<?php echo base_url(); ?>index.php/proveedor/catalogo_productos" class="menutop"><span>Catalogos de Productos</span></a></li>
             </ul>
         
     </div> <!-- TABS END -->    

@@ -14,7 +14,7 @@ $(function() {
     });
     $("#btn_agregar_campos").click(function(e){
         e.preventDefault();
-        //necesario agregar validacion para que no ingrese el mismo campoNombre 2 veces
+        //falta agregar validacion para que no ingrese el mismo campoNombre 2 veces
         var campoNombre = prompt("Ingrese algun detalle especifico", "Ejemplo: Color");
         if( campoNombre != null){
 	        campos++;
@@ -40,7 +40,7 @@ $(function() {
                         data: $("#formAlter").serialize(),
                         success: function(){
                             alert("Ha sido creada la licitación");
-                            $("#content").load("index.php/licitaciones");
+                            $("#content").load("index.php/cliente");
                         }
                     });
             }
@@ -54,7 +54,7 @@ $(function() {
             data: $("#formOfertarLicitacion").serialize(),
             success: function(data){
                     alert("Oferta Realizada");
-                    $("#content").load("index.php/licitaciones");
+                    $("#content").load("index.php/proveedor");
             }
         });
     });
@@ -79,7 +79,7 @@ $(function() {
                     alert("error");
                 else{           
                      alert("El comentario ha sido publicado");
-                     $("#content").load("index.php/licitaciones");
+                     $("#content").load("index.php/cliente");
                     }
             }
         });
@@ -96,7 +96,7 @@ $(function() {
                     alert("error");
                 else{           
                      alert("La oferta ha sido guardada");
-                     $("#content").load("index.php/licitaciones");
+                     $("#content").load("index.php/proveedor");
                     }
             }
         });
@@ -104,5 +104,45 @@ $(function() {
     //mostrar opcion subir imagen
     $("#mostrar_subir_img").submit(function(e){
         $("#responder_a_form").show('slow');
+    });
+    ///////////////////////////////////////////////////////////
+    // Buscar
+    $("#form_buscar_licitacion").submit(function(e){
+        e.preventDefault();
+    });
+    $("#btn_buscar_licitacion").click(function(e){
+        e.preventDefault();
+        $.ajax({
+            url: $("#form_buscar_licitacion").attr("action"),
+            type: "POST",
+            data: $("#form_buscar_licitacion").serialize(),
+            success: function(data){
+                if (data == 0)
+                    alert("error");
+                else{           
+                     
+                     $("#content").load("index.php/proveedor/pagina_buscar_licitacion");
+                    }
+            }
+        });
+    });
+    $("#form_buscar_producto").submit(function(e){
+        e.preventDefault();
+    });
+    $("#btn_buscar_producto").click(function(e){
+        e.preventDefault();
+        $.ajax({
+            url: $("#form_buscar_producto").attr("action"),
+            type: "POST",
+            data: $("#form_buscar_producto").serialize(),
+            success: function(data){
+                if (data == 0)
+                    alert("error");
+                else{           
+                     
+                     $("#content").load("index.php/cliente/pagina_buscar_producto");
+                    }
+            }
+        });
     });
 });

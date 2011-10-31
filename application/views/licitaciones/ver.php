@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/estilo_opciones_licitacion.css" />
+<script type="text/javascript" src="<?php echo base_url(); ?>js/licitaciones.js"></script>
 <div class="grid_8">
 	<table>
 	    <thead>
@@ -49,6 +51,6 @@
 					<img src="<?php echo base_url(); ?>images/icon_success.gif" border="0" />
 		    			Publicar comentario
 	</a>
-	<a href="<?php echo base_url(); ?>index.php/licitaciones/ofertar_licitacion/<?php echo $licitacion['idlicitacion'] ?>" class="menutop"><h2>Ofertar</h2></a>
+	<a href="<?php echo base_url(); ?>index.php/proveedor/ofertar_licitacion/<?php echo $licitacion['idlicitacion'] ?>" class="menutop"><h2>Ofertar</h2></a>
 	<a href="<?php echo base_url(); ?>index.php/licitaciones/ver_comentarios_licitacion/<?php echo $licitacion['idlicitacion'] ?>" class="menutop"><h2>Ver Comentarios</h2></a>
 </div>

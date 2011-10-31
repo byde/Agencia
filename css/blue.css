@@ -169,14 +169,14 @@ a.inline_tip { padding-left:21px; background:url(../images/icons/lightbulb_off.g
   	border-right:1px solid #DFDCBB;
 }
 /*#menu .dashboard { background-image: url(../images/icon_dashboard.png); background-repeat: no-repeat;  }*/
-#menu .dashboard { background-image: url(../images/icon_reports.png); background-repeat: no-repeat;  }
+#menu .dashboard { background-image: url(../images/icon_home.png); background-repeat: no-repeat;  }
 /*#menu .content { background-image: url(../images/icon_edit.png); background-repeat: no-repeat;  }*/
 #menu .content { background-image: url(../images/icon_auction.png); background-repeat: no-repeat;  }
-#menu .reports { background-image: url(../images/icon_reports.png); background-repeat: no-repeat;  }
-#menu .users { background-image: url(../images/icon_users.png); background-repeat: no-repeat;  } 
-#menu .media_library { background-image: url(../images/icon_media.png); background-repeat: no-repeat;  }
+#menu .proveedor { background-image: url(../images/icon_proveedor.png); background-repeat: no-repeat;  }
+#menu .empresas { background-image: url(../images/icon_empresas.png); background-repeat: no-repeat;  } 
+#menu .productos { background-image: url(../images/icon_productos.png); background-repeat: no-repeat;  }
 #menu .event_manager { background-image: url(../images/icon_clock.png); background-repeat: no-repeat;  } 
-#menu .newsletter { background-image: url(../images/icon_news.png); background-repeat: no-repeat;  }
+#menu .acerca { background-image: url(../images/icon_acerca.png); background-repeat: no-repeat;  }
 #menu .settings { background-image: url(../images/icon_settings.png); background-repeat: no-repeat;  }
 #hidden_submenu {
 	background:#FFF;

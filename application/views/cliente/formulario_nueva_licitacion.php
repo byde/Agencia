@@ -1,12 +1,17 @@
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/estilo_opciones_licitacion.css" />
+<script type="text/javascript" src="<?php echo base_url(); ?>js/licitaciones.js"></script>
+
+
+
 <div class="grid_16">
 <!-- TABS START -->
     <div id="tabs">
          
             <ul>
-                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_mis_licitaciones" class="menutop"><span>Mis Licitaciones</span></a></li>
+                      <li><a href="<?php echo base_url(); ?>index.php/cliente/" class="menutop"><span>Mis Licitaciones</span></a></li>
                       <li><a href="#" class="current"><span>Crear Licitación</span></a></li>
-                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_buscar_producto" class="menutop"><span>Buscar Producto</span></a></li>
-                      <li><a href="<?php echo base_url(); ?>index.php/licitaciones/cargar_historial" class="menutop"><span>Historial</span></a></li>
+                      <li><a href="<?php echo base_url(); ?>index.php/cliente/pagina_buscar_producto" class="menutop"><span>Buscar Producto</span></a></li>
+                      <li><a href="<?php echo base_url(); ?>index.php/cliente/historial" class="menutop"><span>Historial</span></a></li>
             </ul>
         
     </div>
@@ -16,7 +21,7 @@
 		<br>
 		<br>
 		<h2>Crear nueva licitacion</h2>
-            <form id="formNueva" action="<?php echo base_url(); ?>index.php/licitaciones/nueva" >
+            <form id="formNueva" action="<?php echo base_url(); ?>index.php/cliente/nueva" >
 		<p>
 			<label for="descriptivo">Nombre descriptivo:</label>
 			<input type="text" name="descriptivo" id="descriptivo" />
@@ -49,10 +54,10 @@
 		<p>
                     <a href="#" class="button_grey" id="btn_agregar_campos" >
                             <img src="<?php echo base_url(); ?>images/icon_new.png" border="0" width="18px" />
-                            Agregar Campos
+                            Agregar Campos *
                         </a>
     <div class="clear"></div>
-                <form id="formAlter"  action="<?php echo base_url(); ?>index.php/licitaciones/nuevacampos/">
+                <form id="formAlter"  action="<?php echo base_url(); ?>index.php/cliente/nuevacampos/">
                     <table id="tablaAlter" width="350px" border="1" class="box-table-b" style="display: none"> 
                         <thead>
                         <tr>
@@ -64,7 +69,7 @@
                         </tr>
                         </thead>
                     </table>
-                    <small>** Si no desea agregar mas detalles simplemente omita este paso</small>
+                    <small>* Si no desea agregar mas detalles simplemente omita este paso</small>
                 </form>
 		</p>
                        <a href="#" class="button_grey" id="btn_enviar">

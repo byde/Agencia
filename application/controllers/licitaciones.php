@@ -3,6 +3,46 @@
 class Licitaciones extends CI_Controller {
 
     public function index() {
+    	
+        
+    }
+	
+	public function ver($idlicitacion) {
+        $this->load->model("licitaciones_model");
+        $data["licitacion"] = $this->licitaciones_model->get_licitacion($idlicitacion);
+        $data["campos"] = $this->licitaciones_model->get_campos($idlicitacion);
+
+        $this->load->view("licitaciones/ver", $data);
+    }
+    public function nuevo_comentario_licitacion() {
+        $this->load->model("licitaciones_model");
+        echo $this->licitaciones_model->guardar_comentario_licitacion();
+    }
+
+    public function ver_comentarios_licitacion($idlicitacion) {
+        $this->load->model("licitaciones_model");
+        $data["licitacion"] = $this->licitaciones_model->get_licitacion($idlicitacion);
+        $data["comentarios"] = $this->licitaciones_model->get_last_licitaciones_comments($idlicitacion);
+
+        if (!$data["comentarios"]) {
+            $this->load->view("licitaciones/no_comentarios", $data);
+        } else {
+            $this->load->view("licitaciones/comentarios", $data);
+        }
+    }
+}
+
+
+
+
+/*  
+  
+ <?php
+
+class Licitaciones extends CI_Controller {
+
+    public function index() {
+    	
         
     }
 	public function cargar_ultimas_licitaciones(){
@@ -14,12 +54,19 @@ class Licitaciones extends CI_Controller {
             $this->load->view("licitaciones/ultimas_licitaciones", $data);
 	}
 	public function cargar_mis_licitaciones(){
-		$this->load->model("licitaciones_model");
-        $data['licitaciones'] = $this->licitaciones_model->get_last_licitaciones();
-        if (!$data['licitaciones'])
-            $this->load->view("licitaciones/no_licitaciones");
-        else
-            $this->load->view("licitaciones/mis_licitaciones", $data);
+		$this->load->model("registros_modelo");	
+		if ($this->registros_modelo->is_logged()){
+			//$id_usuario_log = $this->registros_modelo->get_user();
+			
+			$this->load->model("licitaciones_model");
+			
+			$data['licitaciones'] = $this->licitaciones_model->get_mis_licitaciones();
+			      
+	        if (!$data['licitaciones'])
+	            $this->load->view("licitaciones/no_licitaciones");
+	        else
+	            $this->load->view("licitaciones/mis_licitaciones", $data);
+		}
 	}
 	public function cargar_catalogo_productos() {
         $this->load->view("licitaciones/catalogo_productos");
@@ -91,10 +138,11 @@ class Licitaciones extends CI_Controller {
         $this->load->view("licitaciones/ofertar_licitacion", $data);
     }
     public function nueva_oferta_licitacion() {
+        session_start();	
         $this->load->model("licitaciones_model");
         $idoferta = $this->licitaciones_model->guardar_oferta_licitacion(array(
                     "idlicitacion" => $this->input->post("idlicitacion"),
-                    "idusuario" => 0,
+                    "idusuario" => $_SESSION['idd'],
                     "precio" => $this->input->post("precio"),
                     "nota" => $this->input->post("nota")
                 ));
@@ -104,5 +152,27 @@ class Licitaciones extends CI_Controller {
                 $this->licitaciones_model->guardar_oferta_campos($idoferta, $c, 1);
         }
     }
+	
+	///////////////////////////////////////////////////
+	// BUSCAR
+	function buscar_licitacion()
+	{
+	$this->load->model("licitaciones_model");	
+	$data['query'] = $this->licitaciones_model->buscar_licitacion();
+	$_SESSION['resultado_busqueda'];
+	$this->load->view("licitaciones/buscar_licitacion", $_SESSION);
+	}
+	
+	function buscar_producto()
+	{
+	$this->load->model("licitaciones_model");	
+	$data['query'] = $this->licitaciones_model->buscar_producto();
+	$this->load->view("licitaciones/buscar_producto", $data);
+	}
+	
 
 }
+ 
+
+ */
+ 

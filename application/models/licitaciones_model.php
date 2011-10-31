@@ -18,23 +18,24 @@ class Licitaciones_model extends CI_Model {
         return false;
     }
 	function guardar()
-	{
+	{	session_start();
 		$this->db->set("creacion", "NOW()", false);
+		$this->db->set("idUsuario", $_SESSION['idd']);
 		$this->db->set($this->input->post());
 		$id = $this->db->insert('licitaciones');
 		return $this->db->insert_id();
 	}
         
-        function guardarcampo($idlicitacion, $campovalor, $camponombre)
-        {
-            $data = array(
-                "idlicitacion" => $idlicitacion,
-                "valor" => $campovalor,
-                "nombre" => $camponombre
-                );
-                $this->db->insert("campos", $data);
-                return;
-        }
+    function guardarcampo($idlicitacion, $campovalor, $camponombre)
+    {
+        $data = array(
+        "idlicitacion" => $idlicitacion,
+        "valor" => $campovalor,
+        "nombre" => $camponombre
+        );
+        $this->db->insert("campos", $data);
+        return;
+    }
         
 	function ver_conincidencias($data)
 	{
@@ -106,8 +107,44 @@ class Licitaciones_model extends CI_Model {
                     $id = $this->db->insert('camposofertas');
 		}
 		
-		
-		
+/////////////////////////////////////////////////
+		//Buscar licitacion
+		function buscar_licitacion()
+		{	session_start();
+			$match = $this->input->post("busqueda");
+			$this->db->like("idUsuario",$match);
+			$this->db->or_like("descriptivo",$match);
+			$this->db->or_like("producto",$match);
+			$query = $this->db->get("licitaciones");
+			if ($query->num_rows() > 0)
+				   $_SESSION['resultado_busqueda'] = $query->result_array();
+                   return $query->result_array();
+            return false;
+		}
+/////////////////////////////////////////////////
+		//Buscar producto
+		function buscar_producto()
+		{
+			$match = $this->input->post("busqueda");
+			$this->db->like("idUsuario",$match);
+			$this->db->or_like("descriptivo",$match);
+			$this->db->or_like("producto",$match);
+			$query = $this->db->get("licitaciones");
+			if ($query->num_rows() > 0)
+                   return $query->result_array();
+            return false;
+		}
+/////////////////////////////////////////////////
+	
+		function get_mis_licitaciones()
+		{
+			//session_start();
+			$query = $this->db->get_where("licitaciones", array("idUsuario"=> $_SESSION['idd']));
+			if ($query->num_rows() > 0)
+	        	return $query->result_array();
+	        return false;
+			
+		}
 		
 
 }
