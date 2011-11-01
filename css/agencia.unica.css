@@ -187,6 +187,40 @@ div.info-principal-contenedor{
 	height:470px;
 }
 
+.mas-informacion-paginas img{
+		padding: 10px;
+		background:#3E7FB1;
+		border-radius: 4px;
+		float:right;
+	}
+	.mas-informacion-paginas ul li{
+		background:#f6f6f6;
+		border:solid 1px #ccc;
+		color:#444;
+		border-radius: 6px;
+		list-style:none;
+		padding:20px;
+		position:relative;
+		margin-bottom: 16px;
+	}
+	.mas-informacion-paginas ul li:hover{
+		background:#ccc;
+	}
+	.mas-informacion-paginas h2{
+		position:absolute;
+		color:#bc1303;
+		top:83px;
+	}
+	.mas-informacion-paginas ul li p{
+		font-size:130%;
+	}
+	.izquierda-contenido{
+		width:35%;
+	}
+	.derecha-contenido{
+		width:55%;
+	}
+
 /* Extras */
 .oculto{
 	display:none;
