@@ -4,11 +4,50 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-<div class="mas-informacion-paginas">
+	<div class="mas-informacion-paginas">
 	<h1>¿Cómo comprar en Agencia Única?</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque mollis risus, at lobortis justo facilisis id. Mauris tempus dictum ipsum, vel pretium enim gravida vel. Praesent at nisl ipsum. Vestibulum feugiat sollicitudin tellus, vitae convallis eros cursus nec. Etiam dolor nisi, scelerisque et sagittis vel, rhoncus non diam. Cras leo turpis, rutrum in posuere eu, vehicula nec sem. Mauris semper fringilla venenatis.<img class="fr" src="images/comocomprar.png" /> Phasellus eu dui nibh, ut facilisis ipsum. Nulla vitae ultrices urna. Duis nulla purus, rhoncus nec bibendum facilisis, pretium et sem. Quisque condimentum nibh at metus pellentesque laoreet vitae et purus. Sed mattis blandit tortor at sagittis. Maecenas eget purus neque, non posuere felis. Phasellus eu neque dolor, nec feugiat felis. Mauris dolor libero, tincidunt a sagittis non, faucibus vitae sapien. Quisque fringilla facilisis bibendum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper varius nisi a luctus. Praesent ut ligula nunc, at blandit purus. Proin placerat ultricies libero, at tincidunt nisl tempor faucibus. Morbi dapibus justo in ligula facilisis placerat dignissim dolor varius. Aliquam ultrices nisi vel urna scelerisque egestas vel id ipsum. Suspendisse quis nibh purus, non accumsan urna. Aliquam elementum, risus vel sodales convallis, odio velit euismod dui, at varius mi purus id ipsum. Quisque lobortis pulvinar sagittis. Aliquam faucibus iaculis tellus non adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus, nisl ut sodales luctus, turpis mauris dignissim libero, vitae auctor massa ante vel arcu. Integer nibh lacus, venenatis vel molestie vitae, tincidunt a nunc. Pellentesque id diam eget leo venenatis sollicitudin. Vestibulum ac imperdiet risus.</p>
-</div>
+	<ul>
+		<li>
+			<h2>1 Publícalo</h2>
+				<div class="fl izquierda-contenido"><img src="images/publicar.jpg" width="118" height="100" /><div class="cr"></div></div>
+				<div class="fl derecha-contenido">
+					<p>
+						Crea una licitación nueva con los campos que creas necesarios, a tu gusto.
+					</p>
+				</div>
+				<div class="cl"></div>
+		</li>
+		<li>
+			<h2>2 Selecciona Proveedor</h2>
+				<div class="fl izquierda-contenido"><img src="images/seleccionar.jpg" width="137" height="114" /><div class="cr"></div></div>
+				<div class="fl derecha-contenido">
+					<p>
+						Una vez terminado el periodo de ofertas, podras elegir la mejor oferta realizada por tus proveedores.
+					</p>
+				</div>
+				<div class="cl"></div>
+		</li>
+		<li>
+			<h2>3 Págalo</h2>
+				<div class="fl izquierda-contenido"><img src="images/pagar.jpg" width="149" height="101" /><div class="cr"></div></div>
+				<div class="fl derecha-contenido">
+					<p>
+						Recibir&aacute;s un correo con los datos de tu proveedor, ponte en contacto con el para acordar el pago del producto ya que el trato es directo con tu proveedor.
+					</p>
+				</div>
+				<div class="cl"></div>
+		</li>
+		<li>
+			<h2>4 Recíbelo</h2>
+				<div class="fl izquierda-contenido"><img src="images/entrega.jpg" width="159" height="101" /><div class="cr"></div></div>
+				<div class="fl derecha-contenido">
+					<p>
+						Cuando recibas tu producto evalua a tu proveedor y su producto.
+					</p>
+				</div>
+				<div class="cl"></div>
+		</li>
+	</ul>
+	</div>
 </body>
 </html>
